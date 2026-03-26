@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>SecureApp System</h1>
+    <p>Login or Create an Account</p>
+</header>
+
+<div class="container">
+
+    <form class="form" action="#" method="post">
+        <h2>Login</h2>
+
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" name="username" required minlength="3" maxlength="20">
+
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" name="password" required minlength="6">
+
+        <div class="options">
+            <label>
+                <input type="checkbox" name="remember"> Remember Me
+            </label>
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <form class="form" action="#" method="post">
+        <h2>Register</h2>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digit number">
+
+        <label>Gender</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="india">India</option>
+            <option value="zambia">Zambia</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+        </select>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required minlength="6">
+
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm_password" required minlength="6">
+
+        <div class="options">
+            <label>
+                <input type="checkbox" name="terms" required>
+                I agree to Terms & Conditions
+            </label>
+        </div>
+
+        <input type="submit" value="Register">
+    </form>
+
+</div>
+
+<footer>
+    <p>© 2026 SecureApp | Designed by Precious Lubasi</p>
+</footer>
+
+</body>
+</html>
